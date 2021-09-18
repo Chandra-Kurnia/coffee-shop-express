@@ -210,7 +210,11 @@ const refreshToken = async (req, res, next) => {
     Jwt.verify(token.refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, decode) => {
       if (err) {
         if (err.name === 'TokenExpiredError') {
-          res.clearCookie('authCoffeeShop');
+          res.clearCookie('authCoffeeShop', {
+            httpOnly: true,
+            secure: true,
+            sameSite: 'none',
+          });
           return responseError(res, 'Authorized failed', 401, 'refreshToken expired', []);
         }
         if (err.name === 'JsonWebTokenError') {

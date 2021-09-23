@@ -124,9 +124,9 @@ CREDENTIALS = [TRUE/FALSE]
 
 ## Rest Api
 
-You can view my Postman collection [here](https://www.postman.com/crimson-meadow-842892/workspace/Telegram-Clone~eea3df8d-1aca-4df2-920b-d8a9d5e1e0d6/collection/10655215-e9feb563-0dd8-4675-b396-eece73f7525e)
+You can view my Postman collection [here](https://www.postman.com/crimson-meadow-842892/workspace/coffee-shop-team)
 </br>
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/10655215-e9feb563-0dd8-4675-b396-eece73f7525e?action=collection%2Ffork&collection-url=entityId%3D10655215-e9feb563-0dd8-4675-b396-eece73f7525e%26entityType%3Dcollection%26workspaceId%3Deea3df8d-1aca-4df2-920b-d8a9d5e1e0d6)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/10655215-168761c3-7ebe-46a7-9775-6b983942f29e?action=collection%2Ffork&collection-url=entityId%3D10655215-168761c3-7ebe-46a7-9775-6b983942f29e%26entityType%3Dcollection%26workspaceId%3D0b518684-09b1-448c-8aa8-4e1800bbb6df)
 
 <!-- CONTRIBUTING -->
 ## Contributing

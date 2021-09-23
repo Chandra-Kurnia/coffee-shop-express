@@ -1,153 +1,180 @@
+<br />
 <p align="center">
-     <img src="https://i.postimg.cc/QdVDVtTB/logo.png"   alt= border="0" />
-
+<div align="center">
+  <img height="150" src="/src/asset/img/coffe_copy_huh6kh.png"/>
+</div>
+  <h3 align="center">Backend Coffee Shop</h3>
+  <p align="center">
+    <a href="https://github.com/aryairama/coffee-shop-express"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://bit.ly/_coffee_shop">View Demo</a>
+    ·
+    <a href="https://github.com/aryairama/coffee-shop-express/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/aryairama/coffee-shop-express/issues">Request Feature</a>
+  </p>
 </p>
 
 
----
+
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Setup .env example](#setup-env-example)
+- [Rest Api](#rest-api)
+- [Contributing](#contributing)
+- [Related Project](#related-project)
+- [Our Team](#our-team)
+- [Contact](#contact)
 
 
-## Contents
 
-- [About](#about)
-- [Packages](#Packages)
-- [Installation](#installation)
-- [Coffee Shop - Frontend](#coffee-shop---frontend)
-- [Endpoint](#endpoint)
-- [Authors](#authors)
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-##  About
+Coffee Shop is a Foods & Beverages ordering application. This apps give you (customers) some features to order your favorite foods or beverages. The customers also have some opportunity to use some promo code before directly checkout to the payment page. In payment page you can pick your payments method so it's flexible what kind of money do you have. Also the customers will be able to edit their profile such as photo, username, address, and phone number if they have to change their identity
 
-<p align="justify">Coffee Shop is a Foods & Beverages ordering application. This apps give you (customers) some features to order your favorite foods or beverages. The customers also have some opportunity to use some promo code before directly checkout to the payment page. In payment page you can pick your payments method so it's flexible what kind of money do you have. Also the customers will be able to edit their profile such as photo, username, address, and phone number if they have to change their identity.
-</p>
+### Built With
 
-##  Packages
+- [Node.js](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com/)
+- [JSON Web Tokens](https://jwt.io/)
+- [Nodemailer]('https://nodemailer.com/about/')
+- and other
 
+<!-- GETTING STARTED -->
+## Getting Started
 
-#### Built Wth
-- ExpressJs
-- NodeJs
-- MySQL
-- JWT
+### Prerequisites
 
-#### Packages (Backend)
-    "bcrypt": "^5.0.1",
-    "cookie-parser": "^1.4.5",
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "express-fileupload": "^1.2.1",
-    "express-validator": "^6.12.1",
-    "ioredis": "^4.27.9",
-    "jsonwebtoken": "^8.5.1",
-    "mysql2": "^2.3.0",
-    "nodemailer": "^6.6.3",
-    "socket.io": "^4.2.0",
-    "socket.io-cookie-parser": "^1.0.0",
-    "uuid": "^8.3.2"
+This is an example of how to list things you need to use the software and how to install them.
 
+* [nodejs](https://nodejs.org/en/download/)
 
-## Installation
+### Requirements
+* [Node.js](https://nodejs.org/en/)
+* [Postman](https://www.getpostman.com/) for testing
+* [Database](https://drive.google.com/drive/folders/1Q5ubAjPce-lO6aj9XUIeOxdjzr0hfLEI?usp=sharing)
 
-- Clone This Repo to your local
+### Installation
 
+- Clone This Back End Repo
 ```
 git clone https://github.com/aryairama/coffee-shop-express.git
 ```
-
 - Go To Folder Repo
-
 ```
 cd coffee-shop-express
 ```
-
 - Install Module
-
 ```
 npm install
 ```
+- Make a new database and import [coffee-shop.sql](https://drive.google.com/drive/folders/1Q5ubAjPce-lO6aj9XUIeOxdjzr0hfLEI?usp=sharing)
+- <a href="#setup-env-example">Setup .env</a>
+- Starting application
+```
+npm run serve
+```
 
-- Type ` npm start` To Start Website
+### Setup .env example
 
-<br/>
+Create .env file in your root project folder.
 
-## Coffee Shop - Frontend
+```env
+# Database
+DB_HOST = [DB_HOST]
+DB_USER = = [DB_USER]
+DB_NAME = [DB_NAME]
+DB_PASSWORD = [DB_PASSWORD]
+DB_PORT = [DB_PORT]
+# Aplication
+PORT = [PORT_APLICATION]
+# Secret key for jwt token
+ACCESS_TOKEN_SECRET = [SECRET_KEY_JWT]
+REFRESH_TOKEN_SECRET = [SECRET_KEY_JWT]
+VERIF_EMAIL_TOKEN_SECRET = [SECRET_KEY_JWT]
+FORGOT_PASSWORD_TOKEN_SECRET = [SECRET_KEY_JWT]
+# Redis
+HOST_REDIS = [REDIS_HOST]
+PORT_REDIS = [REDIS_PORT]
+AUTH_REDIS = [REDIS_AUTH]
+PATH_REDIS = [REDIS_UNIX_SOCKET]
+PREFIX_REDIS = [PREFIX-REDIS]
+# IP/SOCKET
+# Sendmailer SMTP
+NODEMAILER_HOST = [SMTP_HOST]
+NODEMAILER_PORT = [SMTP_PORT]
+NODEMAILER_SECURE = [OPTION_SECURE_SMTP]
+NODEMAILER_AUTH_USER = [USER_SMTP]
+NODEMAILER_AUTH_PASS = [PASSWORD_SMTP]
+# FrontEnd
+URL_FRONTEND = [URL_FRONT_END]
+# Origin Cookie
+CORS_ORIGIN = ['http://localhost:3000','http://localhost:4000']
+CREDENTIALS = [TRUE/FALSE]
+```
 
-:rocket: [`Front End Coffee Shop`](https://github.com/dwinovic/coffe-shop-next.git)
+## Rest Api
 
-<br/>
+You can view my Postman collection [here](https://www.postman.com/crimson-meadow-842892/workspace/Telegram-Clone~eea3df8d-1aca-4df2-920b-d8a9d5e1e0d6/collection/10655215-e9feb563-0dd8-4675-b396-eece73f7525e)
+</br>
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/10655215-e9feb563-0dd8-4675-b396-eece73f7525e?action=collection%2Ffork&collection-url=entityId%3D10655215-e9feb563-0dd8-4675-b396-eece73f7525e%26entityType%3Dcollection%26workspaceId%3Deea3df8d-1aca-4df2-920b-d8a9d5e1e0d6)
 
-## Endpoint
+<!-- CONTRIBUTING -->
+## Contributing
 
-#### Categories Endpoint
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-|  METHOD  |             API             |                    ACTIONS                    |
-| :------: | :-------------------------: | :-------------------------------------------: |
-|  `POST`  |       /categories/addcategory       |      add category       |
-|  `GET`  | /categories/getcategory |  get all categories  |
-|  `GET`  |        /categories/showcategory         |        show category     |
-|  `POST`  |   /categories/updatecategory/:id    | update category |
-|  `DELETE`  |   /categories/deletecategory/:id    | delete category |
-
-
-
-#### Users Endpoint
-
-|  METHOD  |             API             |                    ACTIONS                    |
-| :------: | :-------------------------: | :-------------------------------------------: |
-|  `POST`   |       /users/auth/register/:id       |              register user            |
-|  `POST`   |           /users/login     |               login user             |
-|  `GET`   |       /users/profile       |              get user profile              |
-|  `GET`   |       /users/profile/:id       |              get user profile by id            |
-|  `DELETE`   |       /users/logout       |              log out user              |
-| `POST` |       /users/verify-email        |            verify-email           |
-| `PATCH` |       /users/check-token       |             check token verify email          |
-| `PATCH` |       /users/check-token     |             check token forgot password            |
-| `POST` |       /users/profile/:id        |             update profile           |
-| `PATCH` |       /users/forgot-password        |             forgot password          |
-| `PATCH` |       /users/reset-password        |             reset password          |
-| `PATCH` |       /users/update-password        |             update password          |
-| `GET` |       /users        |             get all users           |
-
-
-#### Deliveries Endpoint
-
-|  METHOD  |             API             |                    ACTIONS                    |
-| :------: | :-------------------------: | :-------------------------------------------: |
-|  `POST`  |       /deliveries/adddeliveries       |      add delivery       |
-|  `GET`  | /deliveries/getdeliveries |  get all deliveries  |
-|  `GET`  |        /deliveries/showdelivery         |        show delivery     |
-|  `POST`  |   /deliveries/updatedelivery/:id    | update delivery |
-|  `DELETE`  |   /deliveries/deletedelivery/:id    | delete delivery |
-
-
-#### Products Endpoint
-
-|  METHOD  |             API             |                    ACTIONS                    |
-| :------: | :-------------------------: | :-------------------------------------------: |
-|  `POST`  |       /products/       |      add products       |
-|  `POST`  | /products/:id |  update products  |
-|  `DELETE`  |        /products/:id         |      delete products     |
-|  `GET`  |   /products/  | get all products |
-|  `GET`  |   /products/:id    | get detail products by id |
-|  `GET`  |   /products/category/:id    | get products by category |
-
-
-#### Sizes Endpoint
-
-|  METHOD  |             API             |                    ACTIONS                    |
-| :------: | :-------------------------: | :-------------------------------------------: |
-|  `POST`  |       /sizes/addsizes       |      add size       |
-|  `GET`  | /sizes/getsizes |  get all sizes  |
-|  `GET`  |        /sizes/showsize         |        show size     |
-|  `POST`  |   /sizes/updatesize/:id    | update size |
-|  `DELETE`  |   /sizes/deletesize/:id    | delete size |
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 
 
-## Authors
+## Related Project
+:rocket: [`Backend Coffee-Shop`](https://github.com/aryairama/coffee-shop-express)
 
-1. [Novi Dwi Cahya](https://github.com/dwinovic) - Frontend - Leader
-2. [Arya Irama Wahono](https://github.com/aryairama) - Full Stack - Member
-3. [Chandra Kurniawan](https://github.com/Chandra-Kurnia) - Backend - Member
-4. [Canda Muammal](https://github.com/CandaMuammal) - Frontend - Member
+:rocket: [`Frontend Coffee-Shop`](https://github.com/aryairama/coffe-shop-next)
+
+:rocket: [`Demo Coffee-Shop`](https://bit.ly/_coffee_shop)
+
+
+## Our Team
+
+<center>
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/aryairama">
+          <img width="100" src="https://avatars.githubusercontent.com/u/73978824?v=4" alt="Arya Irama Wahono"><br/>
+          <sub><b>Arya Irama Wahono</b></sub> <br/>
+          <sub>Full Stack Web Developer</sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/Chandra-Kurnia">
+          <img width="100" src="https://avatars.githubusercontent.com/u/75248269?v=4" alt="Chandra Kurniawan"><br/>
+          <sub><b>Chandra Kurniawan</b></sub> <br/>
+          <sub>Back End Developer</sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+</center>
+
+<!-- CONTACT -->
+## Contact
+
+My Email : aryairama987@gmail.com
+
+Project Link: [https://github.com/aryairama/coffee-shop-express](https://github.com/aryairama/coffee-shop-express)

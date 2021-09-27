@@ -142,9 +142,9 @@ Contributions are what make the open source community such an amazing place to b
 
 
 ## Related Project
-:rocket: [`Backend Coffee-Shop`](https://github.com/aryairama/coffee-shop-express)
+:rocket: [`Backend Coffee-Shop`](https://github.com/Candra-Kurnia/coffee-shop-express)
 
-:rocket: [`Frontend Coffee-Shop`](https://github.com/aryairama/coffe-shop-next)
+:rocket: [`Frontend Coffee-Shop`](https://github.com/Candra-Kurnia/coffe-shop-next)
 
 :rocket: [`Demo Coffee-Shop`](https://bit.ly/_coffee_shop)
 
@@ -175,6 +175,6 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-My Email : aryairama987@gmail.com
+My Email : candrakurniawan.dev@gmail.com
 
-Project Link: [https://github.com/aryairama/coffee-shop-express](https://github.com/aryairama/coffee-shop-express)
+Project Link: [https://github.com/Candra-Kurnia/coffee-shop-express](https://github.com/Candra-Kurnia/coffee-shop-express)
